@@ -1,0 +1,5 @@
+version: "3"
+services:
+  diagslave:
+    build: .
+    # command: -m udp -p 503
