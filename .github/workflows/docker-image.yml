@@ -30,6 +30,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile
+          platforms: linux/amd64/linux/arm/v7,linux/arm64
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/modbusslave:latest
